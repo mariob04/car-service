@@ -18,8 +18,11 @@ function ContactStep({goBack, goForward, addFormData}) {
 
                 <textarea id="desc" name="desc" rows="4" cols="50" placeholder="Napomena (opcionalno)"></textarea>
             </div>
-            <button onClick={goBack}>Nazad</button>
-            <button onClick={goForward}>Nastavi</button>
+
+            <div className="btns">
+                <button className="back_btn" onClick={goBack}>Nazad</button>
+                <button className="fwd_btn" onClick={goForward}>Nastavi</button>
+            </div>
         </>
     )
 }

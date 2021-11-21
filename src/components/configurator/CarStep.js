@@ -12,7 +12,7 @@ function CarStep({closeModal, goForward, addFormData}) {
 		<>
 			<h2>Korak 1: Odaberite proizvođača vašeg vozila</h2>
 
-			<div className="modal_input">
+			<div className="modal_car-input">
 				<input type="radio" id="" name="" value="peugeot" checked/>
 				<label htmlFor="">Peugeot</label>
 				<input type="radio" id="" name="" value="opel" />
@@ -36,8 +36,10 @@ function CarStep({closeModal, goForward, addFormData}) {
 				<input type="radio" id="" name="" value="honda" />
 				<label htmlFor="">Honda</label>
 			</div>
-			<button onClick={closeModal}>Odustani</button>
-			<button onClick={goForward}>Nastavi</button>
+			<div className="btns">
+				<button className="back_btn" onClick={closeModal}>Odustani</button>
+				<button className="fwd_btn" onClick={goForward}>Nastavi</button>
+			</div>
 		</>
 	)
 }

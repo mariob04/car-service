@@ -17,8 +17,10 @@ function RecapStep({goBack, goForward, sendData, addFormData}) {
                 Kada ste provjerili i potvrdili podatke, pritisnite gumb <b>Pošalji</b> na dnu kako bi se upit proslijedio na servis
             </p>
 
-            <button onClick={goBack}>Nazad</button>
-            <button onClick={goForward}>Posalji</button>
+            <div className="btns">
+                <button className="back_btn" onClick={goBack}>Nazad</button>
+                <button className="fwd_btn" onClick={goForward}>Posalji</button>
+            </div>
         </>
     )
 }

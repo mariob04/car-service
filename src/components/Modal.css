@@ -24,14 +24,73 @@
     flex-direction: row;
 }
 
-.modal_input {
+.modal_car-input {
     display: flex;
     flex-wrap: wrap;
-    justify-content: safe;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.modal_service-input li {
+    display: block;
+    float: left;
+    width: 25%;
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+li {
+    margin: 10px;
 }
 
 .form_input {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    margin: 10px;
+}
+
+.form_input input {
+    margin-bottom: 10px;
+}
+
+.btns {
+    position: absolute;
+    bottom: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.back_btn {
+    width: 100px;
+    height: 40px;
+    margin-right: 20px;
+    background-color: rgb(155, 40, 40);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.back_btn:hover {
+    background-color: rgb(194, 28, 28);
+}
+
+.fwd_btn {
+    width: 100px;
+    height: 40px;
+    margin-right: 20px;
+    background-color: rgb(40, 155, 59);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.fwd_btn:hover {
+    background-color: rgb(17, 179, 65);
 }
