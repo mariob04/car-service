@@ -34,16 +34,16 @@ function Modal({closeModal}) {
 				<div className="modal_header">
 					<h1>Konfigurator servisa</h1>
 					<div>
-						<button onClick={closeModal}> X </button>
+						<button className="header_btn" onClick={closeModal}> X </button>
 					</div>
 				</div>
-				<div className="modal_content">
-					{currentStep === 'car' && <CarStep closeModal={closeModal} goForward={goForward} addFormData={addFormData} />}
-					{currentStep === 'service' && <ServiceStep goBack={goBack} goForward={goForward} addFormData={addFormData} />}
-					{currentStep === 'contact' && <ContactStep goBack={goBack} goForward={goForward} addFormData={addFormData} />}
-					{currentStep === 'recap' && <RecapStep goBack={goBack} goForward={goForward} addFormData={addFormData} />}
-					{currentStep === 'end' && <EndStep closeModal={closeModal} addFormData={addFormData}/>}
-				</div>
+
+				{currentStep === 'car' && <CarStep closeModal={closeModal} goForward={goForward} addFormData={addFormData} />}
+				{currentStep === 'service' && <ServiceStep goBack={goBack} goForward={goForward} addFormData={addFormData} />}
+				{currentStep === 'contact' && <ContactStep goBack={goBack} goForward={goForward} addFormData={addFormData} />}
+				{currentStep === 'recap' && <RecapStep goBack={goBack} goForward={goForward} addFormData={addFormData} />}
+				{currentStep === 'end' && <EndStep closeModal={closeModal} addFormData={addFormData}/>}
+
 			</div>
 		</div>
 	)

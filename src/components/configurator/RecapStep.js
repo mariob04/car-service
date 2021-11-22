@@ -17,6 +17,47 @@ function RecapStep({goBack, goForward, sendData, addFormData}) {
                 Kada ste provjerili i potvrdili podatke, pritisnite gumb <b>Pošalji</b> na dnu kako bi se upit proslijedio na servis
             </p>
 
+            <div className="recap">
+                <div className="recap_data">
+                    <div className="recap_info">
+                        <h3>Model vozila</h3>
+                        <button>Uredi</button>
+                    </div>
+                    <div className="recap_service">
+                        <h5>Model auta</h5>
+                    </div>
+                </div>
+                <div className="recap_data">
+                    <div className="recap_info">
+                        <h3>Odabrane usluge</h3>
+                        <button>Uredi</button>
+                    </div>
+                    <div className="recap_service">
+                        <ul>
+                            <li>Usluga 1</li>
+                            <li>Usluga 2</li>
+                            <li>Usluga 3</li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+            <div className="recap_contact">
+                <div className="recap_info">
+                    <h3>Kontak podaci</h3>
+                    <button>Uredi</button>
+                </div>
+                <div className="contact_info">
+                    <div>
+                        <h5>Ime i Prezime: </h5>
+                        <h5>Broj telefona: </h5>
+                    </div>
+                    <div>
+                        <h5>Email adresa:  fddddddddddddddddsfsfsfsdfsdfsdfsfsdf</h5>
+                        <h5>Napomena: </h5>
+                    </div>
+                </div>
+            </div>
+
             <div className="btns">
                 <button className="back_btn" onClick={goBack}>Nazad</button>
                 <button className="fwd_btn" onClick={goForward}>Posalji</button>

@@ -13,7 +13,7 @@ function EndStep({closeModal, addFormData}) {
             <h2>Vaša prijava je uspješno poslana</h2>
             <p>Vaša prijava je poslana i zaprimljena. <br/> Kontaktirati ćemo Vas u najkraćem mogućem roku. <br/> Hvala Vam</p>
 
-            <button className="btns" onClick={closeModal}> Zatvori </button>
+            <button className="btns back_btn close_btn" onClick={closeModal}> Zatvori </button>
         </>
     )
 }

@@ -5,7 +5,6 @@
     align-items: center;
     top: 0;
     width: 100%;
-    border-bottom: 3px solid black;
 }
 
 .header_image {
@@ -14,5 +13,6 @@
 }
 
 .header_text {
-    margin: 0 auto;
+    text-align: center;
+    margin: 0 auto ;
 }

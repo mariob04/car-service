@@ -12,7 +12,7 @@ function ServiceStep({goBack, goForward, addFormData}) {
 			<>
 				<h2>Korak 2: Odaberite usluge potrebne na Vašem vozilu</h2>
 
-				<div>
+				<div className="service">
 					<ul >
 						<li>
 							<label htmlFor="">Zamjena ulja i filtera (500 kn)<input type="checkbox" id="ulje" name="ulje" value="500" /></label>
@@ -33,7 +33,16 @@ function ServiceStep({goBack, goForward, addFormData}) {
 						<label htmlFor="">Zamjena ulja u kočnicama (350 kn)<input type="checkbox" id="kocnice" name="kocnice" value="350" /></label>
 						</li>
 					</ul>
+
+					<div className="service_coupon">
+						<button>Imam kupon</button>
+					</div>
 				</div>
+				<div className="service_total">
+					<h1>UKUPNO: 7616 kn</h1>
+				</div>
+
+				
 
 				<div className="btns">
 					<button className="back_btn" onClick={goBack}>Nazad</button>

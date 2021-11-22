@@ -8,12 +8,13 @@ function Home() {
 
   return (
     <div className="home">
-      <h3>Pritisnite gumb kako biste pokrenuli</h3>
+      <h3>Pritisnite gumb kako biste pokrenuli konfigurator</h3>
       <button className="start_btn" onClick={() => {setCarModal(true)}}>
         Pokreni konfigurator
       </button>
       {/* prikaz modala */}
       {carModal && <ConfiguratorModal closeModal={closeModal} />}
+
     </div>
   )
 }
