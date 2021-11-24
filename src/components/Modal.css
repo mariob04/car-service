@@ -193,7 +193,7 @@ p {
     border: none;
 }
 
-.service_coupon button {
+.service_coupon {
     margin-left: 20px;
     background-color: white;
     color: blue;

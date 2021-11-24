@@ -47,14 +47,15 @@ function RecapStep({goBack, goForward, addFormData}) {
                     <button>Uredi</button>
                 </div>
                 <div className="contact_info">
-                    <div>
-                        <h5>Ime i Prezime: </h5>
-                        <h5>Broj telefona: </h5>
-                    </div>
-                    <div>
-                        <h5>Email adresa:  fddddddddddddddddsfsfsfsdfsdfsdfsfsdf</h5>
-                        <h5>Napomena: </h5>
-                    </div>
+                        <div>
+                            <h5>Ime i Prezime: </h5>
+                            <h5>Broj telefona: </h5>
+                        </div>
+                        <div>
+                            <h5>Email adresa: </h5>
+                            <h5>Napomena: </h5>
+                        </div>
+
                 </div>
             </div>
 

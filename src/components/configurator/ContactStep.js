@@ -1,28 +1,37 @@
-import React, {useEffect} from 'react'
+import React from 'react'
+import { useState } from 'react/cjs/react.development'
 
-function ContactStep({goBack, goForward, addFormData}) {
-    useEffect(() => {
-		// primjer
-		addFormData({
-			endingData: 'something'
-		})
-	}, []);
+function ContactStep({goBack, goForward}) {
 
+    const [name, setName] = useState('')
+    const [phone, setPhone] = useState('')
+    const [email, setEmail] = useState('')
+    const [text, setText] = useState('')
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        
+    }
+    
     return (
         <>
             <h2>Korak 3: Vaši kontakt podaci</h2>
-            <form action="">
+            <form onSubmit={handleSubmit}>
                 <div className="form_input">
-                    <input type="text" id={"Miro"} name="name" placeholder="Ime i prezime" required />
+                    <input type="text" value={name} placeholder="Ime i prezime" required 
+                    onChange={e => setName(e.target.value)} />
                 </div>
                 <div className="form_input">
-                    <input type="text" id="phone" name="phone" placeholder="Broj telefona" required />
+                    <input type="text" value={phone} placeholder="Broj telefona" required
+                    onChange={e => setPhone(e.target.value)} />
                 </div>
                 <div className="form_input">
-                    <input type="email" id="email" name="email" placeholder="E-mail" required />
+                    <input type="email" value={email} placeholder="E-mail" required
+                    onChange={e => setEmail(e.target.value)} />
                 </div>
                 <div className="form_input">
-                    <textarea id="desc" name="desc" rows="4" cols="50" placeholder="Napomena (opcionalno)"></textarea>
+                    <textarea value={text} rows="4" cols="50" placeholder="Napomena (opcionalno)"
+                    onChange={e => setText(e.target.value)} ></textarea>
                 </div>
             </form>
 

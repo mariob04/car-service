@@ -9,7 +9,7 @@ import EndStep from './configurator/EndStep';
 import ContactStep from './configurator/ContactStep';
 
 function Modal({closeModal}) {
-  const steps = [
+  	const steps = [
 		'car',
 		'service',
 		'contact',

@@ -24,6 +24,7 @@ function CarStep({closeModal, goForward, addFormData}) {
 	];
 
 	const [checked, setChecked] = useState([]);
+
 	const handleChange = (item, checked) =>
     checked
       ? setChecked((prev) => [...prev, item])

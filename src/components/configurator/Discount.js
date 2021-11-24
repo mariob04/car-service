@@ -1,38 +1,19 @@
-import React from 'react'
-import { Component } from 'react'
+import React, {useState} from 'react'
 import '../Modal.css'
 
-class Discount extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {value: ''}
+function Discount () {
 
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
+    const [coupon, setCoupon] = useState('')
 
-    handleChange(event) {
-        this.setState({value: event.target.value})
-    }
-
-    handleSubmit(event) {
-        alert('Kupon: ' + this.state.value)
-        event.preventDefault();
-    }
-
-
-    render (){
-        return (
-        <form className="discount_input" onSubmit={this.handleSubmit}>
+    return (
+        <form className="discount_input" >
             <input type="text" 
-                value={this.state.value} 
-                onChange={this.handleChange}
+                value={coupon} 
+                onChange={setCoupon}
             ></input>
-            <input type="submit" value="Submit" />
+            <button>Potvrdi</button>
         </form>
         )   
     }
-   
-}
 
 export default Discount
