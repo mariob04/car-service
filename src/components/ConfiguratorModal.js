@@ -42,8 +42,8 @@ function Modal({closeModal}) {
 				{currentStep === 'service' && <ServiceStep goBack={goBack} goForward={goForward} addFormData={addFormData} />}
 				{currentStep === 'contact' && <ContactStep goBack={goBack} goForward={goForward} addFormData={addFormData} />}
 				{currentStep === 'recap' && <RecapStep goBack={goBack} goForward={goForward} addFormData={addFormData} />}
-				{currentStep === 'end' && <EndStep closeModal={closeModal} addFormData={addFormData}/>}
-
+				{currentStep === 'end' && <EndStep closeModal={closeModal} addFormData={addFormData} />}
+				
 			</div>
 		</div>
 	)

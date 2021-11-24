@@ -13,7 +13,7 @@ function ContactStep({goBack, goForward, addFormData}) {
             <h2>Korak 3: Vaši kontakt podaci</h2>
             <form action="">
                 <div className="form_input">
-                    <input type="text" id="name" name="name" placeholder="Ime i prezime" required />
+                    <input type="text" id={"Miro"} name="name" placeholder="Ime i prezime" required />
                 </div>
                 <div className="form_input">
                     <input type="text" id="phone" name="phone" placeholder="Broj telefona" required />

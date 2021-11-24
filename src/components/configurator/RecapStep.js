@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 
-function RecapStep({goBack, goForward, sendData, addFormData}) {
+function RecapStep({goBack, goForward, addFormData}) {
     useEffect(() => {
 		// primjer
 		addFormData({
